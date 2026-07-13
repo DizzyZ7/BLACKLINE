@@ -1,0 +1,35 @@
+/* Responsive hardening — 2026-07 */
+html, body { width: 100%; max-width: 100%; overflow-x: clip; }
+body, main, section, footer { min-width: 0; }
+.hero, .ticker, .fleet, .control-tower, .footer { overflow-x: clip; }
+.section-shell { max-width: calc(100% - 30px); }
+.hero-title { width: min(100%, 1680px); padding-inline: 2vw; font-size: clamp(72px, 10.5vw, 170px); line-height: .78; }
+.hero-title__line--top { transform: translateX(-1.5%); }
+.hero-title__line--bottom { transform: translateX(2%); }
+.hero-map { max-width: 100%; }
+.network-stage, .planner, .tracking-wrap, .contact-grid, .fleet-grid { min-width: 0; }
+.network-stage > *, .planner > *, .tracking-wrap > *, .contact-grid > * { min-width: 0; }
+.container-rail { max-width: none; will-change: transform; }
+.control-board { max-width: 100%; overscroll-behavior-inline: contain; }
+@media (max-width: 780px) {
+  .hero { min-height: max(780px, 100svh); padding-inline: 15px; }
+  .hero-copy--left { max-width: min(270px, 74vw); }
+  .hero-title { top: 39%; width: calc(100% - 24px); padding: 0; font-size: clamp(58px, 18vw, 82px); line-height: .84; letter-spacing: -.065em; transform: translate(-50%, -50%) !important; }
+  .hero-title__line--top, .hero-title__line--bottom { transform: none; }
+  .hero-map { top: 61%; width: min(96vw, 620px); height: min(40vh, 380px); max-width: 100%; overflow: hidden; transform: translate(-50%, -50%) !important; }
+  .hero-map svg { overflow: hidden; }
+  .hero-route-card { right: 16px; bottom: 96px; width: min(210px, calc(100% - 32px)); }
+  .hero-bottom { left: 15px; right: 15px; bottom: 22px; gap: 12px; }
+  .hero-kpis, .hero-kpis div { min-width: 0; }
+  .ticker__track { font-size: 15px; }
+  .network-map { overflow: hidden; }
+  .planner-screen, .tracking-terminal, .control-board { max-width: 100%; }
+  .control-board { scrollbar-width: thin; }
+  .manifest h2, .services h2, .planner h2, .tracking h2, .fleet h2, .control-copy h2, .contact h2 { line-height: .9; }
+}
+@media (max-width: 460px) {
+  .hero { min-height: 760px; }
+  .hero-title { top: 39%; font-size: clamp(54px, 17.5vw, 72px); }
+  .hero-map { top: 60%; width: 94vw; height: 340px; }
+  .hero-route-card { bottom: 96px; }
+}
