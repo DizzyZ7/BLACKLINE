@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#090909" />
+  <meta name="description" content="BLACKLINE — international freight, customs and supply-chain control in one precise system." />
+  <title>BLACKLINE — Freight without friction</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="loader" aria-hidden="true">
+    <div class="loader__word">BLACKLINE</div>
+    <div class="loader__track"><span></span></div>
+    <div class="loader__meta"><span>GLOBAL FREIGHT SYSTEM</span><span>00—100</span></div>
+  </div>
+
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor" aria-hidden="true"><span>OPEN</span></div>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="BLACKLINE home">
+      <span class="brand__mark">BL</span>
+      <span class="brand__name">BLACKLINE</span>
+    </a>
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="#network">Network</a>
+      <a href="#services">Services</a>
+      <a href="#tracking">Tracking</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-right">
+      <span class="live-status"><i></i> Operations live</span>
+      <a class="header-cta magnetic" href="#contact">Move a shipment <b>↗</b></a>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="menu-panel" aria-hidden="true">
+    <div class="menu-panel__top"><span>BLACKLINE</span><span>GLOBAL FREIGHT / 2026</span></div>
+    <nav aria-label="Mobile navigation">
+      <a href="#network"><small>01</small><span>Network</span></a>
+      <a href="#services"><small>02</small><span>Services</span></a>
+      <a href="#tracking"><small>03</small><span>Tracking</span></a>
+      <a href="#contact"><small>04</small><span>Contact</span></a>
+    </nav>
+    <div class="menu-panel__bottom"><span>Almaty · Dubai · Rotterdam</span><span>24/7 control tower</span></div>
+  </div>
+
+  <main>
+    <section class="hero" id="top">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-flash" aria-hidden="true"></div>
+      <div class="hero-copy hero-copy--left">
+        <p class="eyebrow">International logistics / Control tower</p>
+        <p class="hero-intro">From factory gate to final destination — every handoff visible, every delay challenged.</p>
+      </div>
+      <h1 class="hero-title" aria-label="Move what matters">
+        <span class="hero-title__line hero-title__line--top">MOVE WHAT</span>
+        <span class="hero-title__line hero-title__line--bottom">MATTERS.</span>
+      </h1>
+
+      <div class="hero-map" data-cursor="ROUTE">
+        <svg viewBox="0 0 1000 560" role="img" aria-label="Animated global freight route">
+          <defs>
+            <filter id="glow"><feGaussianBlur stdDeviation="5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+          </defs>
+          <g class="map-grid-lines" opacity=".18">
+            <path d="M0 90H1000M0 180H1000M0 270H1000M0 360H1000M0 450H1000"/>
+            <path d="M125 0V560M250 0V560M375 0V560M500 0V560M625 0V560M750 0V560M875 0V560"/>
+          </g>
+          <g class="continents">
+            <path d="M86 188l48-48 70-13 55 17 34 38-30 32-55 12-20 44-57-2-41-32z"/>
+            <path d="M212 292l33 14 32 44-5 49-31 75-25-3-12-51-20-49z"/>
+            <path d="M423 156l54-29 72 7 45 34 26-11 38 26 64 3 78 41-16 32-69 17-31 43-75-4-38-26-31 13-52-39-42-40z"/>
+            <path d="M525 307l43 13 30 45-12 75-36 39-34-21-10-57z"/>
+            <path d="M803 365l42-22 46 15 18 33-27 25-58 2-30-24z"/>
+          </g>
+          <path class="route route--ghost" d="M157 205 C300 70 420 330 549 217 S790 198 859 374"/>
+          <path class="route route--active" d="M157 205 C300 70 420 330 549 217 S790 198 859 374"/>
+          <g class="route-points">
+            <g transform="translate(157 205)"><circle r="8"/><circle class="pulse" r="18"/><text x="-12" y="-25">ROTTERDAM</text></g>
+            <g transform="translate(549 217)"><circle r="8"/><circle class="pulse" r="18"/><text x="-10" y="-25">ALMATY</text></g>
+            <g transform="translate(859 374)"><circle r="8"/><circle class="pulse" r="18"/><text x="-15" y="-25">SHANGHAI</text></g>
+          </g>
+          <circle class="route-runner" r="7" filter="url(#glow)"><animateMotion dur="8s" repeatCount="indefinite" path="M157 205 C300 70 420 330 549 217 S790 198 859 374"/></circle>
+        </svg>
+        <div class="hero-route-card">
+          <div><span>Active route</span><strong>RTM → ALA → SHA</strong></div>
+          <div><span>Mode</span><strong>SEA / RAIL</strong></div>
+          <div><span>ETA</span><strong>18D 07H</strong></div>
+        </div>
+      </div>
+
+      <div class="hero-side-label">CONTROL / VISIBILITY / VELOCITY</div>
+      <div class="hero-bottom">
+        <a class="hero-button magnetic" href="#planner"><span>Build your route</span><b>↘</b></a>
+        <div class="hero-kpis"><div><strong>42</strong><span>countries</span></div><div><strong>96.8%</strong><span>on-time</span></div><div><strong>24/7</strong><span>control</span></div></div>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Service highlights">
+      <div class="ticker__track">
+        <span>AIR FREIGHT</span><i>●</i><span>OCEAN FREIGHT</span><i>●</i><span>RAIL CORRIDORS</span><i>●</i><span>CUSTOMS</span><i>●</i><span>WAREHOUSING</span><i>●</i><span>LAST MILE</span><i>●</i>
+        <span>AIR FREIGHT</span><i>●</i><span>OCEAN FREIGHT</span><i>●</i><span>RAIL CORRIDORS</span><i>●</i><span>CUSTOMS</span><i>●</i><span>WAREHOUSING</span><i>●</i><span>LAST MILE</span><i>●</i>
+      </div>
+    </section>
+
+    <section class="manifest section-shell">
+      <div class="section-topline"><p class="section-label">01 / Position</p><span>Freight without friction</span></div>
+      <div class="manifest-grid">
+        <h2>WE DON’T MOVE BOXES.<br><em>WE MOVE BUSINESS.</em></h2>
+        <div class="manifest-copy">
+          <p>BLACKLINE connects ocean, air, rail, road and customs into one accountable system.</p>
+          <p>One control tower. One timeline. No blind spots between pickup and delivery.</p>
+        </div>
+      </div>
+      <div class="manifest-stats">
+        <article><span>01</span><strong data-count="320">0</strong><p>active trade lanes</p></article>
+        <article><span>02</span><strong data-count="68">0</strong><p>customs specialists</p></article>
+        <article><span>03</span><strong data-count="14">0</strong><p>regional hubs</p></article>
+        <article><span>04</span><strong data-count="11">0</strong><p>years average team tenure</p></article>
+      </div>
+    </section>
+
+    <section class="network" id="network">
+      <div class="network-head section-shell">
+        <div class="section-topline"><p class="section-label">02 / Network</p><span>Global reach, local command</span></div>
+        <div class="network-title-row"><h2>ONE MAP.<br>NO DEAD ZONES.</h2><p>Click a hub to inspect live capacity, primary corridors and operating status.</p></div>
+      </div>
+      <div class="network-stage section-shell">
+        <div class="network-map" data-active="0">
+          <svg viewBox="0 0 1200 640" aria-label="BLACKLINE global hub network">
+            <g class="network-world">
+              <path d="M72 221l72-74 92-18 84 26 43 52-44 43-65 10-33 58-82-2-61-43z"/>
+              <path d="M267 342l52 17 43 66-7 70-47 101-38-7-18-71-30-64z"/>
+              <path d="M501 180l77-43 104 12 65 44 34-15 60 39 94 4 103 63-26 43-90 23-45 59-102-8-55-38-51 14-70-52-58-53z"/>
+              <path d="M636 388l64 17 40 63-14 93-53 50-47-31-18-77z"/>
+              <path d="M998 449l54-31 61 19 29 44-34 37-75 2-45-35z"/>
+            </g>
+            <g class="network-routes">
+              <path d="M218 240Q420 92 605 274T1008 454"/>
+              <path d="M218 240Q425 360 605 274T830 250"/>
+              <path d="M605 274Q678 360 750 445"/>
+              <path d="M830 250Q914 290 1008 454"/>
+            </g>
+            <g class="hub" data-index="0" transform="translate(218 240)"><circle r="10"/><circle class="hub-ring" r="24"/><text x="-35" y="-34">ROTTERDAM</text></g>
+            <g class="hub" data-index="1" transform="translate(605 274)"><circle r="10"/><circle class="hub-ring" r="24"/><text x="-24" y="-34">ALMATY</text></g>
+            <g class="hub" data-index="2" transform="translate(830 250)"><circle r="10"/><circle class="hub-ring" r="24"/><text x="-24" y="-34">DUBAI</text></g>
+            <g class="hub" data-index="3" transform="translate(1008 454)"><circle r="10"/><circle class="hub-ring" r="24"/><text x="-28" y="-34">SHANGHAI</text></g>
+            <g class="hub" data-index="4" transform="translate(750 445)"><circle r="10"/><circle class="hub-ring" r="24"/><text x="-24" y="-34">NAIROBI</text></g>
+          </svg>
+          <div class="radar radar--one"></div><div class="radar radar--two"></div>
+        </div>
+        <aside class="hub-panel">
+          <div class="hub-panel__index">HUB / <span>01</span></div>
+          <h3>ROTTERDAM</h3>
+          <p>Europe gateway for ocean, rail and customs consolidation.</p>
+          <dl><div><dt>Status</dt><dd class="status-green">Operational</dd></div><div><dt>Daily capacity</dt><dd>2,840 TEU</dd></div><div><dt>Main corridor</dt><dd>EU → Central Asia</dd></div><div><dt>Next cutoff</dt><dd>21:40 CET</dd></div></dl>
+          <button class="hub-panel__button" type="button">Inspect corridor <span>↗</span></button>
+        </aside>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="services-head section-shell">
+        <div class="section-topline"><p class="section-label">03 / Services</p><span>Every mode. One command layer.</span></div>
+        <h2>BUILT FOR<br><em>COMPLEX MOVEMENT.</em></h2>
+      </div>
+      <div class="services-list section-shell">
+        <article class="service-item" data-service="air"><div class="service-no">01</div><h3>Air freight</h3><p>Priority lift, secured capacity and milestone control for urgent cargo.</p><span class="service-arrow">↗</span><div class="service-visual service-visual--air"><i></i><i></i><i></i></div></article>
+        <article class="service-item" data-service="ocean"><div class="service-no">02</div><h3>Ocean freight</h3><p>FCL, LCL and special equipment across core global trade lanes.</p><span class="service-arrow">↗</span><div class="service-visual service-visual--ocean"><i></i><i></i><i></i><i></i></div></article>
+        <article class="service-item" data-service="rail"><div class="service-no">03</div><h3>Rail corridors</h3><p>Reliable east–west transit with consolidated and block-train options.</p><span class="service-arrow">↗</span><div class="service-visual service-visual--rail"><i></i><i></i><i></i></div></article>
+        <article class="service-item" data-service="customs"><div class="service-no">04</div><h3>Customs & compliance</h3><p>Classification, documentation and clearance managed before cargo arrives.</p><span class="service-arrow">↗</span><div class="service-visual service-visual--customs"><i></i><b>✓</b></div></article>
+      </div>
+    </section>
+
+    <section class="planner" id="planner">
+      <div class="planner-left">
+        <div class="section-topline"><p class="section-label">04 / Route builder</p><span>Compare before you commit</span></div>
+        <h2>CHOOSE THE<br>BEST LINE.</h2>
+        <p>Select a corridor. BLACKLINE balances speed, cost and carbon before a booking is made.</p>
+        <div class="route-options" role="tablist" aria-label="Route options">
+          <button class="route-option is-active" type="button" role="tab" aria-selected="true" data-route="0"><span>01</span><b>Fastest</b><small>Air / Road</small></button>
+          <button class="route-option" type="button" role="tab" aria-selected="false" data-route="1"><span>02</span><b>Balanced</b><small>Rail / Road</small></button>
+          <button class="route-option" type="button" role="tab" aria-selected="false" data-route="2"><span>03</span><b>Lowest CO₂</b><small>Sea / Rail</small></button>
+        </div>
+      </div>
+      <div class="planner-screen" data-route="0">
+        <div class="planner-screen__bar"><span>BLACKLINE ROUTE ENGINE</span><span>LIVE CAPACITY</span></div>
+        <div class="planner-screen__map">
+          <svg viewBox="0 0 760 440"><g opacity=".18"><path d="M0 88H760M0 176H760M0 264H760M0 352H760M95 0V440M190 0V440M285 0V440M380 0V440M475 0V440M570 0V440M665 0V440"/></g><path class="planner-route planner-route--0" d="M85 330C180 120 360 80 680 170"/><path class="planner-route planner-route--1" d="M85 330C250 275 360 180 680 170"/><path class="planner-route planner-route--2" d="M85 330C210 405 490 350 680 170"/><circle cx="85" cy="330" r="9"/><circle cx="680" cy="170" r="9"/><text x="54" y="363">ORIGIN</text><text x="646" y="203">DEST.</text></svg>
+          <div class="planner-mode"><span>AIR</span><i></i><span>ROAD</span></div>
+        </div>
+        <div class="planner-results"><div><span>Transit</span><strong class="route-transit">2D 14H</strong></div><div><span>Reliability</span><strong class="route-reliability">98.4%</strong></div><div><span>CO₂ index</span><strong class="route-carbon">HIGH</strong></div><div><span>Capacity</span><strong class="route-capacity">AVAILABLE</strong></div></div>
+      </div>
+    </section>
+
+    <section class="tracking" id="tracking">
+      <div class="tracking-wrap section-shell">
+        <div class="tracking-copy"><div class="section-topline"><p class="section-label">05 / Visibility</p><span>Every milestone, exposed</span></div><h2>KNOW BEFORE<br>YOU ASK.</h2><p>Track a shipment by container, airway bill or BLACKLINE reference. The demo number is preloaded.</p><form class="tracking-form"><label for="tracking-number">Tracking number</label><div><input id="tracking-number" name="tracking" value="BLX-7842-RTM" autocomplete="off" /><button type="submit">Track <span>↗</span></button></div></form></div>
+        <div class="tracking-terminal"><div class="terminal-head"><span>SHIPMENT / BLX-7842-RTM</span><span class="terminal-live"><i></i> LIVE</span></div><div class="shipment-summary"><div><small>Origin</small><strong>ROTTERDAM</strong><span>NLRTM</span></div><b>→</b><div><small>Destination</small><strong>ALMATY</strong><span>KZALA</span></div></div><div class="shipment-progress"><span></span></div><div class="milestones"><article class="is-done"><i></i><div><small>08 JUL / 14:40</small><strong>Container gated in</strong><p>ECT Delta Terminal</p></div><b>✓</b></article><article class="is-done"><i></i><div><small>09 JUL / 05:15</small><strong>Vessel departed</strong><p>North Sea / eastbound</p></div><b>✓</b></article><article class="is-current"><i></i><div><small>13 JUL / 17:20</small><strong>Rail handoff confirmed</strong><p>Duisburg Intermodal Terminal</p></div><b>LIVE</b></article><article><i></i><div><small>18 JUL / EST.</small><strong>Border clearance</strong><p>Khorgos dry port</p></div><b>04</b></article><article><i></i><div><small>21 JUL / EST.</small><strong>Final delivery</strong><p>Almaty consignee</p></div><b>05</b></article></div><div class="terminal-foot"><span>Next update in 00:13:42</span><button type="button">Share tracking link</button></div></div>
+      </div>
+    </section>
+
+    <section class="fleet"><div class="fleet-head section-shell"><div class="section-topline"><p class="section-label">06 / Equipment</p><span>Capacity shaped around cargo</span></div><h2>THE RIGHT UNIT.<br>NOT JUST ANY UNIT.</h2></div><div class="container-rail" aria-hidden="true"><div class="cargo-unit cargo-unit--red"><span>BLACKLINE</span><small>45G1 / 4510</small></div><div class="cargo-unit cargo-unit--white"><span>HIGH CUBE</span><small>40HC / 76CBM</small></div><div class="cargo-unit cargo-unit--black"><span>REEFER</span><small>-25°C / +25°C</small></div><div class="cargo-unit cargo-unit--red"><span>OPEN TOP</span><small>OOG / PROJECT</small></div><div class="cargo-unit cargo-unit--white"><span>AIR ULD</span><small>PMC / PAG</small></div></div><div class="fleet-grid section-shell"><article><span>01</span><h3>Standard & high cube</h3><p>Global availability for dry cargo and regular replenishment flows.</p></article><article><span>02</span><h3>Temperature controlled</h3><p>Validated cold-chain execution with monitored handoffs and alerts.</p></article><article><span>03</span><h3>Oversized & project</h3><p>Route engineering, permits and lifting plans for non-standard cargo.</p></article></div></section>
+
+    <section class="control-tower"><div class="control-copy section-shell"><div class="section-topline"><p class="section-label">07 / Control tower</p><span>Exceptions handled before they spread</span></div><h2>WE WATCH<br>THE GAPS.</h2><p>When a connection fails, BLACKLINE does not wait for the next status email. The control tower compares alternatives, books recovery and updates every stakeholder.</p></div><div class="control-board section-shell"><div class="control-board__head"><span>EXCEPTION QUEUE</span><span>13 JUL 2026 / UTC+5</span></div><div class="exception-row is-critical"><span>BLX-88104</span><strong>PORT CONGESTION</strong><p>Ningbo → Rotterdam</p><b>RECOVERY IN PROGRESS</b><em>02:14</em></div><div class="exception-row"><span>BLX-77420</span><strong>CUSTOMS QUERY</strong><p>Dubai → Almaty</p><b>DOCUMENTS RESUBMITTED</b><em>00:36</em></div><div class="exception-row"><span>BLX-33186</span><strong>CAPACITY SHIFT</strong><p>Frankfurt → Tbilisi</p><b>ALTERNATE FLIGHT HELD</b><em>00:11</em></div><div class="exception-row is-resolved"><span>BLX-54001</span><strong>WEATHER DELAY</strong><p>Rotterdam → Hamburg</p><b>RESOLVED</b><em>—</em></div></div></section>
+
+    <section class="contact" id="contact"><div class="contact-grid section-shell"><div class="contact-copy"><p class="section-label">08 / Start moving</p><h2>PUT YOUR<br>CARGO ON<br><em>THE LINE.</em></h2><p>Tell us where it is, where it needs to be and what cannot go wrong.</p></div><form class="contact-form"><label>Name<input name="name" required placeholder="Your name" /></label><label>Work email<input name="email" type="email" required placeholder="name@company.com" /></label><div class="form-row"><label>Origin<input name="origin" required placeholder="City / port" /></label><label>Destination<input name="destination" required placeholder="City / port" /></label></div><label>Cargo type<select name="cargo"><option>General cargo</option><option>Temperature controlled</option><option>Oversized / project cargo</option><option>High value</option><option>Other</option></select></label><label>What matters most?<textarea name="message" rows="4" placeholder="Deadline, dimensions, volume, compliance requirements..."></textarea></label><button class="submit-button magnetic" type="submit"><span>Request a route</span><b>↗</b></button><p class="form-note">Your route brief will be copied so you can send it through your preferred channel.</p></form></div></section>
+  </main>
+
+  <footer class="footer"><div class="footer-top section-shell"><a class="brand brand--footer" href="#top"><span class="brand__mark">BL</span><span class="brand__name">BLACKLINE</span></a><div><a href="#network">Network</a><a href="#services">Services</a><a href="#tracking">Tracking</a></div><div><span>Almaty</span><span>Dubai</span><span>Rotterdam</span></div><a href="#contact">operations@blackline.global</a></div><div class="footer-word">BLACKLINE</div><div class="footer-bottom section-shell"><span>© 2026 BLACKLINE GLOBAL LOGISTICS</span><span>FREIGHT WITHOUT FRICTION</span><a href="#top">BACK TO TOP ↑</a></div></footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.3.25/dist/lenis.min.js"></script>
+  <script src="scripts/app.js"></script>
+</body>
+</html>
